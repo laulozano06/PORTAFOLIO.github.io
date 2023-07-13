@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster:wght@300;400&display=swap');
+
+/* Estilos generales */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lobster';
+  color:rgb(0, 0, 0);
+
+}
+ 
+  /* Estilos de la barra de navegación */
+  .navbar {
+    background-color:rgb(94, 0, 182);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .brand {
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  
+  .navbar-options {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar-options li {
+    margin-right: 20px;
+  }
+  
+  .navbar-options li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar-options li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilos del contenido */
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 60px;
+  }
+  
+  p {
+    line-height: 1.5;
+    font-size: 20px;
+  }
+
+.img1{
+  height:200px;
+  width: 200px;
+  bottom: 300px;
+}
+
+
+  .p1{
+    position: relative;
+    bottom: -100px;
+    font-size: 20px;
+  }
+
+  li{
+    font-size: 20px;
+  }
+  .li1{position: relative;
+    bottom: -50px;
+    font-size: 20px;}
+
+
+  .brand{
+    font-size: 30px;
+  
+  }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    background-color: #f8f8f8;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #555555;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#closeBtn {
+    background-color:rgb(94, 0, 182);
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#closeBtn:hover {
+    background-color: #333333;
+}
+
+.slider{
+width: 95%;
+margin:auto;
+overflow: hidden;
+}
+.slider ul{
+  display: flex;
+  padding: 0;
+  width: 400%;
+
+  animation: cambio 20s infinite;
+  animation-direction: alternate;
+}
+.slider li{
+  height:700px;
+  width: 100%;
+    list-style: none;
+}
+  
+@keyframes cambio {
+  0% { margin-left: 0;}
+  20% { margin-left: 0;}
+
+  25%{ margin-left: -100%;}
+  45%{margin-left: -100;}
+
+  50%{ margin-left: -200%;}
+  70%{margin-left: -200;}
+
+  75%{ margin-left: -300%;}
+  100%{margin-left: -300;}
+}
